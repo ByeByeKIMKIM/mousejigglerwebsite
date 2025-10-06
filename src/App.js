@@ -35,12 +35,37 @@ function App() {
   return (
     <div className="container">
       {/* Header Section */}
-      <header className="header">
+      {/* <header className="header">
         <h1 className="logo">Idle Zero</h1>
         <p className="tagline">BS your way through work. Effortless presence, peace of mind.</p>
         <a href="#features" className="cta-button">
           Explore Features
         </a>
+      </header> */}
+      {/* --- REPLACEMENT Header Section with Animation Elements --- */}
+      <header className="header">
+        {/* This new container holds the animated shapes */}
+        <div className="background-shapes">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+        </div>
+
+        {/* This new container ensures your text stays on top */}
+        <div className="header-content">
+          <h1 className="logo">Idle Zero</h1>
+          <p className="tagline">BS your way through work. Effortless presence, peace of mind.</p>
+          <a href="#features" className="cta-button">
+            Explore Features
+          </a>
+        </div>
       </header>
 
       <main>
@@ -127,7 +152,7 @@ function App() {
             <details className="faq-item">
               <summary className="faq-question">How do I install Idle Zero?</summary>
               <p className="faq-answer">
-                After downloading the installer, open it and follow the on-screen instructions to complete the installation process. Once installed, you can launch Idle Zero from your applications folder or start menu.
+                After downloading the installer, open it and follow the on-screen instructions to complete the installation process. Once installed, you can launch Idle Zero from your applications folder or start menu. (Notice that Idle Zero is called "Notepad" to avoid raising suspicion)
               </p>
             </details>
 
